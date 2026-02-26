@@ -7,7 +7,6 @@ import { useAnalytics } from '@/hooks/useAnalytics';
 import { FirebaseError } from 'firebase/app';
 import { motion } from 'framer-motion';
 import { RiGoogleFill, RiGithubFill } from "@remixicon/react";
-import { SplineScene } from '@/components/ui/spline-scene';
 import { gsap } from 'gsap';
 
 export default function LoginPage() {
@@ -308,14 +307,6 @@ export default function LoginPage() {
           <div className="video-overlay" />
         </div>
 
-        {/* 3D Scene Integration */}
-        <div className="absolute inset-0 z-10 opacity-60">
-          <SplineScene
-            scene={`${basePath}/robot-scene.splinecode`}
-            className="w-full h-full"
-            interactive={true}
-          />
-        </div>
 
         {/* Central Auth UI */}
         <motion.div
